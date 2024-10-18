@@ -1,0 +1,31 @@
+.section-projects {
+  padding: 2rem;
+  width: 100%;
+  height: 100%;
+}
+
+.section-projects > div.project-title > h2 {
+  font-size: 2rem;
+}
+
+.section-projects > div.projects-content{
+  display: grid;
+  gap: var(--padding-medium);
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+}
+
+.section-projects > div.projects-content > *:nth-child(2)
+{
+  grid-column: span 2;
+  width: 100%;
+}
+
+.section-projects > div.projects-content > *:nth-child(4){
+  width: 100%;
+}
+
+.section-projects > div.projects-content > *:nth-child(6){
+  grid-column: span 2;
+  width: 100%;
+}

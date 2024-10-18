@@ -1,0 +1,264 @@
+.section-home {
+  display: flex;
+  align-items: center;
+  flex-basis: calc(100% / 2);
+  padding: 10rem;
+  height: 100%;
+}
+
+.section-home > div.home-left {
+  display: flex;
+  flex-direction: column;
+  gap: var(--padding-small);
+}
+
+.section-home > div.home-left,
+.section-home > div.home-right {
+  width: 100%;
+}
+
+.section-home > div.home-left > h2 > span.left-title-first {
+  background-color: var(--background-main);
+  padding: 0 var(--padding-small);
+}
+
+.section-home > div.home-left > h2 {
+  font-size: 5rem;
+}
+/* Styles container right*/
+.section-home > div.home-right {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  position: relative;
+}
+
+.section-home > div.home-right > div.right-image {
+  width: 60%;
+  height: 100%;
+}
+
+.section-home > div.home-right > div.right-image > img {
+  width: 100%;
+  animation: moveTopBottom 4s infinite;
+}
+
+/*Styles for comments  right */
+.section-home > div.home-right > div.comment {
+  box-shadow: var(--box-shadow);
+  padding: var(--padding-small);
+  border-radius: var(--padding-small);
+  position: absolute;
+  color: var(--color-white);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: moveTopBottom 4.1s infinite reverse;
+}
+.section-home > div.home-right > div.comment-html:hover::after,
+.section-home > div.home-right > div.comment-css:hover::after,
+.section-home > div.home-right > div.comment-js:hover::after,
+.section-home > div.home-right > div.comment-ts:hover::after,
+.section-home > div.home-right > div.comment-js:hover::after,
+.section-home > div.home-right > div.comment-react:hover::after,
+.section-home > div.home-right > div.comment-mySQL:hover::after,
+.section-home > div.home-right > div.comment-node:hover::after,
+.section-home > div.home-right > div.comment-illustrator:hover::after,
+.section-home > div.home-right > div.comment-photoshop:hover::after,
+.section-home > div.home-right > div.comment-adobeXD:hover::after,
+.section-home > div.home-right > div.comment-indesign:hover::after,
+.section-home > div.home-right > div.comment-premierPro:hover::after,
+.section-home > div.home-right > div.comment-afterEffects:hover::after,
+.section-home > div.home-right > div.comment-basicOffice:hover::after {
+  content: "";
+  position: absolute;
+  top: -60%;
+  right: 15%;
+  background-color: var(--background-color-black);
+  padding: 0.2rem;
+  border-radius: var(--border-radius-small);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-home > div.home-right > div.comment-html {
+  top: 10%;
+  right: 2%;
+  background-color: var(--color-yelow);
+}
+.section-home > div.home-right > div.comment-html:hover::after {
+  content: "HTML";
+}
+
+.section-home > div.home-right > div.comment-css {
+  top: 20%;
+  right: -5%;
+  background-color: var(--color-blue);
+}
+.section-home > div.home-right > div.comment-css:hover::after {
+  content: "CSS";
+}
+
+.section-home > div.home-right > div.comment-js {
+  top: 30%;
+  right: -10%;
+  background-color: var(--color-yelow);
+}
+.section-home > div.home-right > div.comment-js:hover::after {
+  content: "javaScript";
+}
+
+.section-home > div.home-right > div.comment-ts {
+  top: 40%;
+  right: -11%;
+  background-color: var(--color-blue-strong);
+}
+.section-home > div.home-right > div.comment-ts:hover::after {
+  content: "TypeScript";
+}
+.section-home > div.home-right > div.comment-react {
+  top: 50%;
+  right: -9%;
+  background-color: var(--color-blue-neon);
+}
+.section-home > div.home-right > div.comment-react:hover::after {
+  content: "React";
+}
+
+.section-home > div.home-right > div.comment-mySQL {
+  top: 60%;
+  right: -8%;
+  background-color: var(--color-yelow-strong);
+}
+
+.section-home > div.home-right > div.comment-mySQL:hover::after {
+  content: "mySQL";
+}
+
+.section-home > div.home-right > div.comment-node {
+  top: 70%;
+  right: -5%;
+  background-color: var(--color-green);
+}
+
+.section-home > div.home-right > div.comment-node:hover::after {
+  content: "NodeJs";
+}
+
+/*Styles for comments  left */
+.section-home > div.home-right > div.comment-illustrator {
+  top: 10%;
+  right: 58%;
+  background-color: var(--color-brown);
+}
+.section-home > div.home-right > div.comment-illustrator:hover::after {
+  content: "Illustrator";
+}
+
+.section-home > div.home-right > div.comment-photoshop {
+  top: 20%;
+  right: 62%;
+  background-color: var(--color-blue-dark);
+}
+
+.section-home > div.home-right > div.comment-photoshop:hover::after {
+  content: "Photoshop";
+}
+
+.section-home > div.home-right > div.comment-adobeXD {
+  top: 30%;
+  right: 64%;
+  background-color: var(--color-pink-strong);
+}
+
+.section-home > div.home-right > div.comment-adobeXD:hover::after {
+  content: "AdobeXD";
+}
+
+.section-home > div.home-right > div.comment-indesign {
+  top: 40%;
+  right: 64%;
+  background-color: var(--color-brown);
+}
+
+.section-home > div.home-right > div.comment-indesign:hover::after {
+  content: "Indesign";
+}
+
+.section-home > div.home-right > div.comment-premierPro {
+  top: 50%;
+  right: 63%;
+  background-color: var(--color-pink-strong);
+}
+
+.section-home > div.home-right > div.comment-premierPro:hover::after {
+  content: "Premier Pro";
+  width: 100px;
+}
+
+.section-home > div.home-right > div.comment-afterEffects {
+  top: 60%;
+  right: 60%;
+  background-color: var(--color-blue-dark);
+}
+
+.section-home > div.home-right > div.comment-afterEffects:hover::after {
+  content: "After Effects";
+  width: 110px;
+}
+
+.section-home > div.home-right > div.comment-basicOffice {
+  top: 70%;
+  right: 54%;
+  background-color: var(--color-orange);
+}
+
+.section-home > div.home-right > div.comment-basicOffice:hover::after {
+  content: "Basic Office";
+  width: 110px;
+}
+
+@keyframes moveTopBottom {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/*Styles for adaptable - responsive */
+@media (min-width: 400px) and (max-width: 900px) {
+  .section-home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .section-home > div.home-right {
+    display: none;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1400px) {
+  .section-home {
+    display: flex;
+    align-items: center;
+  }
+
+  .section-home > div.home-right {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .section-home > div.home-right > div.right-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

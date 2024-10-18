@@ -1,0 +1,16 @@
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: var(--padding-medium);
+}
+
+.nav-menu > .item > span {
+  display: flex;
+  align-items: center;
+  gap: var(--padding-small);
+  transition: color 0.4s ease;
+}
+
+.nav-menu > .item > span:hover {
+  color: var(--color-main);
+}

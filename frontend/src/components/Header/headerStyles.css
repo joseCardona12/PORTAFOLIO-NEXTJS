@@ -1,0 +1,26 @@
+.header {
+  padding: var(--padding-medium);
+  width: 100%;
+  box-shadow: var(--box-shadow);
+  border-radius: var(--border-radius-small);
+}
+
+.header > nav.header-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header > nav.header-nav > div.nav-brand {
+  font-weight: bold;
+}
+
+.header > nav.header-nav > div.nav-logout {
+  display: flex;
+  align-items: center;
+}
+
+.header > nav.header-nav > div.nav-logout > .logout {
+  text-decoration: none;
+  color: var(--paragraph-color);
+}

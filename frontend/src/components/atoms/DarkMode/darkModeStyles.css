@@ -1,0 +1,15 @@
+.dark-mode {
+  border-top-right-radius: var(--border-radius-small);
+  border-bottom-right-radius: var(--border-radius-small);
+  padding: var(--padding-small);
+  position: absolute;
+  top: 10%;
+  left: 0;
+  height: 40px;
+  background-color: var(--background-color-black);
+  color: var(--color-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
