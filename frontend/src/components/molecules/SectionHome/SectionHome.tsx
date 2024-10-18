@@ -97,4 +97,3 @@ export default function SectionHome({ homeViewData }: ISectionHomeProps) {
     </section>
   );
 }
-dasddasdas
