@@ -1,7 +1,7 @@
 "use client";
 import "./sectionStyles.css";
 import { IComment, IResponseHomeView } from "@/interfaces";
-import { Button, ButtonIcon, Input } from "@/components/atoms";
+import { Button, ButtonIcon } from "@/components/atoms";
 import { MdEdit } from "react-icons/md";
 import { useState } from "react";
 import {
@@ -28,8 +28,7 @@ export default function SectionHome({ homeViewData }: ISectionHomeProps) {
   const router = useRouter();
   const darkMode = useDarkMode((state) => state.darkMode);
 
-  if (!homeViewData || homeViewData.message !== "correct getHomeViewService")
-    return null;
+  if(!homeViewData || homeViewData.message !== "correct getHomeViewService") return null;
   const titleSeparate: string[] = homeViewData.homeView.title.split("-");
   const descripionSeparate: string[] =
     homeViewData.homeView.description.split(".");
@@ -98,3 +97,4 @@ export default function SectionHome({ homeViewData }: ISectionHomeProps) {
     </section>
   );
 }
+dasddasdas

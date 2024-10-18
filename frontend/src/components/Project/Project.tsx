@@ -1,7 +1,6 @@
 "use client";
 import { IProject, IResponseProject } from "@/interfaces";
 import "./projectStyles.css";
-import { Button } from "../atoms";
 import { useRouter } from "next/navigation";
 
 interface IProjectProps {
@@ -35,4 +34,3 @@ export default function Project({ projects }: IProjectProps): React.ReactNode {
     </>
   );
 }
-dsada

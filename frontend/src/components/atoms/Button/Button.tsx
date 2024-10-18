@@ -8,8 +8,6 @@ interface IButtonProps {
 export default function Button({
   text,
   onClick,
-  color,
-  backgroundColor,
 }: IButtonProps): React.ReactNode {
   return (
     <button className="button" onClick={onClick}>

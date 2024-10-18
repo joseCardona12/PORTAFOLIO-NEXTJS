@@ -1,7 +1,6 @@
 "use client";
 import { IoMdMoon } from "react-icons/io";
 import "./darkModeStyles.css";
-import { useState } from "react";
 import { useDarkMode } from "@/state-global/darkMode";
 
 export default function DarkMode(): React.ReactNode {
