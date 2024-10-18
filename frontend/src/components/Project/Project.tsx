@@ -27,12 +27,6 @@ export default function Project({ projects }: IProjectProps): React.ReactNode {
               <h3 className="project-title">{project.name}</h3>
               <p className="project-description">{project.description}</p>
             </div>
-            <div className="info-bottom">
-              <Button
-              text="See more"
-              onClick={() => window.open(project.url_image, "_blank")}
-              />
-            </div>
           </div>
         </div>
       ))
