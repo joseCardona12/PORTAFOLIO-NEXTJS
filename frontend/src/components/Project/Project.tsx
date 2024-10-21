@@ -3,7 +3,7 @@ import { IProject, IResponseProject, IResponseTechnology, ITechnology } from "@/
 import "./projectStyles.css";
 import { useRouter } from "next/navigation";
 import { FaFolderClosed } from "react-icons/fa6";
-
+import { useSearchProjectName } from "@/state-global/searchProjectName";
 
 interface IProjectProps {
   projects: IResponseProject | null;
@@ -11,8 +11,8 @@ interface IProjectProps {
 }
 export default function Project({ projects, technologies }: IProjectProps): React.ReactNode {
   const router = useRouter();
-  // const searchProject = useSearchProject((state) =>state.searchProject);
-  // const limit:number = 4;
+  const searchProjectName = useSearchProjectName((state)=>state.searchProjectName)
+  const limit:number = 4;
   if (!projects?.projects) return null;
 
   const handleClickRedirect = (id:number):void =>{
