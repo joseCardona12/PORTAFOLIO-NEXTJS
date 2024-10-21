@@ -27,4 +27,20 @@ export default class ProjectController{
             res.json({message: "Error with the getProjectByIdFilter", data: error}).status(500);
         }
     }
+
+    static async getProjectByPagination(req:Request, res:Response):Promise<void>{
+        try{
+            const {page} = req.params;
+            if(!page){
+                res.json({message: "Error. Is required all params", data: "error"}).status(400);
+                return;
+            }
+            const projectService = container.resolve(ProjectService);
+            const projects = await projectService.getProjectByPagination(parseInt(page));
+            res.json({message: "correct getProjectByPagination", projects}).status(200);
+
+        }catch(error:unknown){
+            res.json({message: "Error with the getProjectByPagination", data: error}).status(500);
+        }
+    }
 }

@@ -8,4 +8,6 @@ export default class TechnologyService{
     async getTechnologiesByProjectId(id:number):Promise<ITechnology[] | null>{
         return await this.technologyRepository.getTechnologiesByProjectId(id);
     }
+
+    
 }

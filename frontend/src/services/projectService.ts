@@ -9,3 +9,27 @@ export async function getProyectsService(): Promise<IResponseProject | null> {
   );
   return data;
 }
+
+export async function getProjectQuantityFilterService(quantity:number):Promise<IResponseProject | null>{
+  const data: IResponseProject | null = await fetchApi(
+    `http://localhost:4100/api/projects/${quantity}/filter`, {
+      headers: {
+        "Content-Type": "application/json"
+      },
+      cache: "no-store",
+    }
+  );
+  return data;
+}
+
+export async function getProjectByPaginationService(page:number):Promise<IResponseProject | null>{
+  const data: IResponseProject | null = await fetchApi(
+    `http://localhost:4100/api/projects/${page}/pagination`, {
+      headers: {
+        "Content-Type": "application/json"
+      },
+      cache: "no-store",
+    }
+  );
+  return data;
+}

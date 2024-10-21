@@ -20,4 +20,14 @@ export default class ProjectService{
         });
         return quantityProject;
     }
+
+    async getProjectByPagination(page:number):Promise<IProject[] | null>{
+        const projects:IProject[] | null = await this.projectRepository.getProjects();
+        if(!projects) return null;
+        
+        const pageSize:number = 4;
+        const startIndex = (page - 1) * pageSize;
+        const endIndex = (startIndex + pageSize);
+        return projects.slice(startIndex, endIndex);
+    }
 }

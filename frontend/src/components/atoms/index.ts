@@ -4,4 +4,5 @@ import Input from "./Input/Input";
 import SelectLanguage from "./SelectLanguage/SelectLanguage";
 import DarkMode from "./DarkMode/DarkMode";
 import InputSearch from "./InputSearch/InputSearch";
-export { Button, ButtonIcon, Input, SelectLanguage, DarkMode, InputSearch };
+import Loading from "./Loading/Loading";
+export { Button, ButtonIcon, Input, SelectLanguage, DarkMode, InputSearch, Loading };

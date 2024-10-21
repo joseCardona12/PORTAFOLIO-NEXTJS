@@ -13,6 +13,7 @@ export default function Project({ projects, technologies }: IProjectProps): Reac
   const router = useRouter();
   const searchProjectName = useSearchProjectName((state)=>state.searchProjectName)
   const limit:number = 4;
+  console.log("projects",);
   if (!projects?.projects) return null;
 
   const handleClickRedirect = (id:number):void =>{
