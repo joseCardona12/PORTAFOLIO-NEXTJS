@@ -1,3 +1,7 @@
+import { SectionContact } from "@/components/molecules"
+
 export default function ContactView(): React.ReactNode {
-  return <div>Contact view</div>;
+  return (
+    <SectionContact />
+  )
 }

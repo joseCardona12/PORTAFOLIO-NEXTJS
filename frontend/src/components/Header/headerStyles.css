@@ -22,3 +22,14 @@
   text-decoration: none;
   color: var(--paragraph-color);
 }
+
+
+@media (max-width: 900px){
+  .header{
+  }
+
+  .header > nav.header-nav {
+    flex-direction: column;
+    gap: var(--padding-medium);
+  }
+}

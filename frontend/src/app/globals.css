@@ -55,4 +55,9 @@ body {
   background-color: var(--background-gray);
 }
 
+@media(max-width: 768px) {
+  body{
+    margin: 3rem;
+  }
+}
 

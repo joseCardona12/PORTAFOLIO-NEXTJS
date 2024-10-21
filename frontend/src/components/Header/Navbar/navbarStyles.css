@@ -14,3 +14,9 @@
 .nav-menu > .item > span:hover {
   color: var(--color-main);
 }
+
+@media (max-width: 900px){
+  .nav-menu{
+    flex-direction: column;
+  }
+}
