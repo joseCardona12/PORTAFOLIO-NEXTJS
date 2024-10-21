@@ -1,0 +1,24 @@
+.search-input{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    border-radius: var(--border-radius-small);
+    border: 1px solid var(--background-gray-light);
+    transition: background-color 0.4s ease;
+}
+
+.search-input:hover{
+    background-color: var(--background-gray-light);
+}
+
+.search-input > input.input{
+    border: none;
+    outline: none;
+    background: transparent;
+    font-family: var(--font-main);
+}
+.search-input > .icon{
+    color: var(--paragraph-color);
+    cursor: pointer;
+}

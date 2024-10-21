@@ -3,7 +3,7 @@ import { fetchApi } from "@/utils/fetchApi";
 
 export async function getProyectsService(): Promise<IResponseProject | null> {
   const data: IResponseProject | null = await fetchApi(
-    "http://localhost:4000/api/projects", {
+    "https://backend-portafolio-nextjs-1.onrender.com/api/projects", {
       cache: "no-store",
     }
   );

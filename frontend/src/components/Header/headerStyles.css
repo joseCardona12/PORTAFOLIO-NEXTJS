@@ -1,8 +1,6 @@
 .header {
   padding: var(--padding-medium);
   width: 100%;
-  box-shadow: var(--box-shadow);
-  border-radius: var(--border-radius-small);
 }
 
 .header > nav.header-nav {

@@ -2,30 +2,43 @@
   padding: 2rem;
   width: 100%;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--padding-large);
+}
+
+.section-projects > div.project-title{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .section-projects > div.project-title > h2 {
   font-size: 2rem;
+  position: relative;
 }
 
-.section-projects > div.projects-content{
-  display: grid;
+.section-projects > div.project-title > div.title-right{
+  display: flex;
+  align-items: center;
   gap: var(--padding-medium);
-  grid-template-columns: repeat(3, 1fr);
-  width: 100%;
 }
 
-.section-projects > div.projects-content > *:nth-child(2)
-{
-  grid-column: span 2;
-  width: 100%;
+.section-projects > div.project-title > h2::before{
+  content: "";
+  position: absolute;
+  bottom: -18%;
+  left: 0;
+  width: 70px;
+  height: 5px;
+  background-color: var(--background-main);
+  border-radius: var(--border-radius-small);
 }
 
-.section-projects > div.projects-content > *:nth-child(4){
+/*Styles container projects */
+.section-projects > div.projects-content{
+  display: flex;
+  flex-wrap: wrap;
   width: 100%;
-}
-
-.section-projects > div.projects-content > *:nth-child(6){
-  grid-column: span 2;
-  width: 100%;
+  gap: var(--padding-medium);
 }

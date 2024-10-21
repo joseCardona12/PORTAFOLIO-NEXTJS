@@ -1,0 +1,16 @@
+.pagination-number{
+    display: flex;
+    gap: var(--padding-small);
+}
+
+.pagination-number > div.pagination-number-item{
+    padding: var(--padding-small);
+    border-radius: var(--border-radius-small);
+    border: 1px solid var(--background-gray-light);
+    cursor: pointer;
+    transition: background-color 0.4s ease;
+}
+
+.pagination-number > div.pagination-number-item:hover{
+    background-color: var(--background-gray-light);
+}

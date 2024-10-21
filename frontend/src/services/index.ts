@@ -1,4 +1,6 @@
 import { getHomeViewService } from "./homeViewService";
+import { getTechnologiesByProjectService } from "./technologyService";
 export {
-    getHomeViewService
+    getHomeViewService,
+    getTechnologiesByProjectService
 }

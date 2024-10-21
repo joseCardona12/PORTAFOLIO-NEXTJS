@@ -6,4 +6,4 @@ export default async function HomeView(){
   return(
     <SectionHome homeViewData={homeViewData} />
   )
-}
+} 

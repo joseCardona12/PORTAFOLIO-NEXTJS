@@ -3,6 +3,7 @@ import type { IResponseHomeView } from "./homeViewInterface";
 import type { IComment } from "./commentInterface";
 import type { IContact } from "./contactInterface";
 import type { IResponseProject, IProject } from "./projectInterface";
+import type { IResponseTechnology, ITechnology } from "./technologyInterface";
 export type {
   IHomeView,
   IResponseHomeView,
@@ -10,4 +11,6 @@ export type {
   IContact,
   IResponseProject,
   IProject,
+  IResponseTechnology,
+  ITechnology
 };
